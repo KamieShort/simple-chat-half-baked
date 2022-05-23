@@ -27,6 +27,7 @@ export default function Chat() {
     getMessages()
       .then(setMessages)
       .then(subscribe)
+
       // TODO: Subscribe to message changes, using handleMessageReceived
       // as the callback function
 

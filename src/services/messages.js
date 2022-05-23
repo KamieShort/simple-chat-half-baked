@@ -21,7 +21,7 @@ export function subscribe(onMessage = (_message) => {}) {
   const res = client
     .from('messages')
     .on('INSERT', (payload) => {
-      console.log('Change received!', payload);
+      console.log('message received!', payload);
     })
     .subscribe();
   return parseData(res);
